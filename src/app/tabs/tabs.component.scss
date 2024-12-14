@@ -1,0 +1,130 @@
+.tabs { 
+    display: flex;
+    gap: 14px;
+
+    background-color: rgba(white, 0.25);
+    backdrop-filter: blur(3px);
+    
+
+    border-radius: 12px;
+
+    padding: 10px;
+    margin: 10px;
+    margin-top: 50px;
+
+}
+
+.tab{
+    position: relative;
+
+    text-decoration: none;
+
+    z-index: 1;
+}
+
+.tab-tile {
+    display: flex;
+
+    padding: 18px;
+
+    cursor: pointer;
+
+    i { 
+        color: #222;
+    }
+
+    transition: all 0.3s ease-out;
+
+}
+
+.tab.selected .tab-tile {
+    transform: translateY(-50%);
+
+    transition-duration: 0.2s;
+
+    transition-timing-function: cubic-bezier(0, 0, 0, 1.5);
+}
+
+// Styles for the background "Shape"
+
+.tab-tile::before {
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+
+    height: 100%;
+    width: 100%;
+
+    border-radius: 10px;
+    
+    opacity: 0.9;
+
+    transition: all 0.2s;
+}
+
+.bookmarks-tab .tab-tile::before {
+    background: linear-gradient(45deg, #f8b5b5, #e2d2fd);
+}
+
+.todos-tab .tab-tile::before {
+    background: linear-gradient(45deg, #ffbdde, #a2ffff);
+}
+
+.notes-tab .tab-tile::before {
+    background: linear-gradient(45deg, #d2cdff, #5fffbc);
+}
+
+.tab-tile:hover::before{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.tab.selected .tab-tile::before {
+    opacity: 1;
+    border-radius: 50% ;
+    transform: scale(1.1);
+    box-shadow: 0px 8px 15px rgba(black, 0.15);
+    transition-delay: 0.03s;
+}
+
+// End of the backgorund "shape"
+
+
+
+
+// styles for the underline effect
+
+.tab::after {
+    content:'';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+
+    height: 3px;
+    width: 50%;
+    border-radius: 3px;
+
+    margin: auto;
+
+    background-color: rgba(white, 0.85);
+    
+    transition: all 0.2S;
+    
+    //hide by default
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.tab.selected::after {
+    opacity: 1;
+    transform: scaleX(1);
+    transition-delay: 0.25s;
+}
+
+ta.selected {
+    outline: none;
+}
