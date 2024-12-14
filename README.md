@@ -2,14 +2,14 @@
 
 ## Project Overview
 
-This project is an Angular-based personal dashboard application. It is designed to provide users with a customizable and interactive interface to manage their personal tasks, events, and other relevant information.
+This project is an Angular-based personal dashboard application. It is designed to provide users with a customizable and interactive interface to manage their personal Todos, Bookmarks, and Notes.
 
 ## Features
 
-- Customizable widgets
-- Task management
-- Event calendar
-- Responsive design
+- Bookmarks Feature
+- Todo List
+- Note List
+- Backgroud Changes
 
 ## Technologies Used
 
@@ -19,6 +19,7 @@ This project is an Angular-based personal dashboard application. It is designed 
 - SCSS
 - Bootstrap 
 - Mongo DB
+- ExpressJS
 
 ## Installation
 
@@ -44,7 +45,7 @@ To run this project locally, follow these steps:
 
 ## Usage
 
-After running the application, you can register a new account or log in with an existing account. Once logged in, you can add, edit, and delete tasks and events. You can also customize the dashboard by adding or removing widgets.
+After running the application, you can add, edit, and delete bookmarks, todos, notes. You can also customize the dashboard by adding changing the background.
 
 ## Project Structure
 
@@ -56,41 +57,20 @@ angular-personal-dashboard/
 │   ├── app/
 │   │   ├── components/
 │   │   ├── services/
-│   │   ├── models/
-│   │   ├── app.module.ts
-│   │   ├── app.component.ts
 │   │   ├── app.component.html
-│   │   └── ...
-│   ├── assets/
-│   ├── environments/
+│   │   ├── app.component.css
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   ├── app.config.ts
+│   │   └── app.routes.ts
 │   ├── index.html
 │   ├── main.ts
-│   └── ...
+│   └── style.scss
 ├── angular.json
 ├── package.json
 ├── README.md
 └── ...
 ```
-
-## Contributing
-
-If you would like to contribute to this project, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch:
-    ```bash
-    git checkout -b feature/your-feature-name
-    ```
-3. Make your changes and commit them:
-    ```bash
-    git commit -m 'Add some feature'
-    ```
-4. Push to the branch:
-    ```bash
-    git push origin feature/your-feature-name
-    ```
-5. Create a new Pull Request.
-
 
 ## Contact
 
