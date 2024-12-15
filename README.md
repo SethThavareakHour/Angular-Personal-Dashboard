@@ -19,7 +19,7 @@ This project is an Angular-based personal dashboard application. It is designed 
 - SCSS
 - Bootstrap 
 - Mongo DB
-- ExpressJS
+- NodeJS
 
 ## Installation
 
